@@ -49,7 +49,13 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" size="sm">
+            <Button
+              variant="hero"
+              size="sm"
+              as="a"
+              href="https://wa.me/201011533423"
+              target="_blank"
+            >
               Work with Me
             </Button>
           </div>
