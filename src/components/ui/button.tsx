@@ -10,9 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        destructive:
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        outline:
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-primary text-background font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 glow-electric",
@@ -29,21 +32,48 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  },
+  }
 );
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+// Base button props that are common to all variants
+type BaseButtonProps = VariantProps<typeof buttonVariants> & {
   asChild?: boolean;
+  className?: string;
+};
+
+// Button-specific props
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, BaseButtonProps {
+  as?: 'button';
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
-    return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;
-  },
+// Anchor-specific props
+interface AnchorProps extends React.AnchorHTMLAttributes<HTMLAnchorElement>, BaseButtonProps {
+  as: 'a';
+  // Ensure href is required for anchor tags
+  href: string;
+}
+
+type ButtonComponentProps = ButtonProps | AnchorProps;
+
+const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonComponentProps>(
+  (props, ref) => {
+    const { className, variant, size, asChild = false, as: Tag = 'button', ...rest } = props;
+    const Comp = asChild ? Slot : Tag;
+    
+    // Type assertion for ref since we know it will be the correct type based on 'as' prop
+    const refProp = ref as React.Ref<HTMLButtonElement> & React.Ref<HTMLAnchorElement>;
+    
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={refProp}
+        {...rest as any}
+      />
+    );
+  }
 );
+
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
+

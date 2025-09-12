@@ -1,56 +1,102 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Play, ExternalLink } from "lucide-react";
+import { Play, ExternalLink, X } from "lucide-react";
+import vid1 from "../assets/vid1.mp4";
+import vid2 from "../assets/vid2.mp4";
+import vid3 from "../assets/vid3.mp4";
+import vid4 from "../assets/vid4.mp4";
+import vid5 from "../assets/vid5.mp4";
+import vid6 from "../assets/vid6.mp4";
+import vid7 from "../assets/vid7.mp4";
+import vid8 from "../assets/vid8.mp4";
+import vid9 from "../assets/vid9.mp4";
+import soravid1 from "../assets/soravid1.png";
+import soravid2 from "../assets/soravid2.png";
+import soravid3 from "../assets/soravid3.png";
+import soravid4 from "../assets/soravid4.png";
+import soravid5 from "../assets/soravid5.png";
+import soravid6 from "../assets/soravid6.png";
+import soravid7 from "../assets/soravid7.png";
+import soravid8 from "../assets/soravid8.png";
+import soravid9 from "../assets/soravid9.png";
 
 const Portfolio = () => {
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
   const videos = [
     {
       id: 1,
-      title: "WaffarX Product Campaign",
-      description: "High-converting advertising video for major e-commerce platform",
-      thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop",
-      duration: "1:30",
-      category: "Commercial"
+      title: "WaffarX Kenz Campaign",
+      thumbnail: soravid1,
+      videoUrl: vid1,
+      duration: "0:56",
+      category: "Commercial",
+    },
+    {
+      id: 8,
+      title: "Amazon Prime Week",
+      thumbnail: soravid8,
+      videoUrl: vid8,
+      duration: "0:42",
+      category: "Explainer",
+    },
+    {
+      id: 9,
+      title: "Why Only Gas!",
+      thumbnail: soravid9,
+      videoUrl: vid9,
+      duration: "0:56",
+      category: "Explainer",
     },
     {
       id: 2,
-      title: "Tech Startup Explainer",
-      description: "Engaging explainer video for innovative tech solution",
-      thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=300&fit=crop",
-      duration: "2:15",
-      category: "Explainer"
-    },
-    {
-      id: 3,
-      title: "Fashion Brand Story",
-      description: "Lifestyle commercial showcasing premium fashion collection",
-      thumbnail: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop",
-      duration: "1:45",
-      category: "Fashion"
+      title: "Back To School",
+      thumbnail: soravid2,
+      videoUrl: vid2,
+      duration: "0:48",
+      category: "Explainer",
     },
     {
       id: 4,
-      title: "Fitness App Promo",
-      description: "Dynamic promotional video for health and wellness app",
-      thumbnail: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
-      duration: "1:00",
-      category: "Health"
+      title: "Samsung M55",
+      thumbnail: soravid4,
+      videoUrl: vid4,
+      duration: "1:09",
+      category: "Explainer",
     },
     {
       id: 5,
-      title: "Real Estate Commercial",
-      description: "Luxurious property showcase with cinematic storytelling",
-      thumbnail: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop",
-      duration: "2:30",
-      category: "Real Estate"
+      title: "Don't Forget Us",
+      thumbnail: soravid5,
+      videoUrl: vid5,
+      duration: "0:37",
+      category: "Explainer",
     },
     {
       id: 6,
-      title: "Social Media Campaign",
-      description: "Viral social media content series for lifestyle brand",
-      thumbnail: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=300&fit=crop",
-      duration: "0:45",
-      category: "Social"
-    }
+      title: "Amazon Back To School",
+      thumbnail: soravid6,
+      videoUrl: vid6,
+      duration: "0:53",
+      category: "Explainer",
+    },
+    {
+      id: 7,
+      title: "Looking For Something?",
+      thumbnail: soravid7,
+      videoUrl: vid7,
+      duration: "0:55",
+      category: "Explainer",
+    },
+
+    {
+      id: 3,
+      title: "Looking For New Mobile?",
+      thumbnail: soravid3,
+      videoUrl: vid3,
+      duration: "1:00",
+      category: "Commercial",
+    },
   ];
 
   return (
@@ -61,23 +107,26 @@ const Portfolio = () => {
             <span className="text-gradient">Featured Work</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of compelling video content that drives engagement and delivers results
+            A showcase of compelling video content that drives engagement and
+            delivers results
           </p>
         </div>
-        
+
+        {/* Video Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {videos.map((video, index) => (
-            <Card 
-              key={video.id} 
-              className="portfolio-item glass border-none"
+            <Card
+              key={video.id}
+              className="portfolio-item glass border-none cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
+              onClick={() => setSelectedVideo(video.videoUrl)}
             >
               <CardContent className="p-0 relative group">
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img 
-                    src={video.thumbnail} 
+                  <img
+                    src={video.thumbnail}
                     alt={video.title}
-                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -92,16 +141,18 @@ const Portfolio = () => {
                     {video.category}
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                     {video.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">
+                  {/* <p className="text-muted-foreground mb-4">
                     {video.description}
-                  </p>
+                  </p> */}
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-primary font-medium">View Project</span>
+                    <span className="text-sm text-primary font-medium">
+                      View Video
+                    </span>
                     <ExternalLink className="w-4 h-4 text-primary" />
                   </div>
                 </div>
@@ -109,6 +160,32 @@ const Portfolio = () => {
             </Card>
           ))}
         </div>
+
+        {/* Popup Video Modal */}
+        {selectedVideo && (
+          <div
+            className="fixed inset-0 bg-background/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedVideo(null)}
+          >
+            <div
+              className="relative max-w-sm w-auto bg-background rounded-lg overflow-hidden"
+              onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+            >
+              <video
+                src={selectedVideo}
+                controls
+                autoPlay
+                className="w-full h-auto rounded-lg"
+              />
+              <button
+                className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
+                onClick={() => setSelectedVideo(null)}
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

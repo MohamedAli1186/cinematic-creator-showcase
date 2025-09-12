@@ -10,30 +10,34 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
     { label: "Home", href: "#" },
-    { label: "Portfolio", href: "#portfolio" },
+    { label: "Videos", href: "#portfolio" },
     { label: "About", href: "#about" },
     { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" }
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "glass backdrop-blur-xl border-b border-border/20" : ""
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "glass backdrop-blur-xl border-b border-border/20" : ""
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="text-2xl font-bold">
-            <span className="text-gradient">YourName</span>
-          </div>
-          
+          <a href="#">
+            <div className="text-2xl font-bold">
+              <span className="text-gradient">Mohamed Ali</span>
+            </div>
+          </a>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
@@ -49,7 +53,7 @@ const Navigation = () => {
               Work with Me
             </Button>
           </div>
-          
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
@@ -63,10 +67,10 @@ const Navigation = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass backdrop-blur-xl border-t border-border/20">
+        <div className="md:hidden glass text-center backdrop-blur-xl border-t border-border/20">
           <div className="px-4 py-6 space-y-4">
             {navItems.map((item) => (
               <a
@@ -78,7 +82,14 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" size="sm" className="w-full mt-4">
+            <Button
+              as="a"
+              href="https://wa.me/201011533423"
+              target="_blank"
+              variant="hero"
+              size="sm"
+              className="w-full mt-4"
+            >
               Work with Me
             </Button>
           </div>
