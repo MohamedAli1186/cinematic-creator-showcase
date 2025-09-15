@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import ana1 from "../assets/ana1.jpg";
 import ana2 from "../assets/ana2.jpg";
 import ana3 from "../assets/ana3.jpg";
-import ana4 from "../assets/ana4.jpg";
+import ana7 from "../assets/ana7.jpg";
 import ana5 from "../assets/ana5.jpg";
 import ana6 from "../assets/ana6.jpg";
 
@@ -13,7 +13,7 @@ const PhotoGallery = () => {
   const photos = [
     {
       id: 1,
-      src: ana1,
+      src: ana6,
       alt: "Professional headshot 1",
     },
     {
@@ -28,7 +28,7 @@ const PhotoGallery = () => {
     },
     {
       id: 4,
-      src: ana4,
+      src: ana7,
       alt: "Behind the scenes 1",
     },
     {
@@ -38,13 +38,13 @@ const PhotoGallery = () => {
     },
     {
       id: 6,
-      src: ana6,
+      src: ana1,
       alt: "Professional headshot 4",
     },
   ];
 
   return (
-    <section id="gallery" className="py-20 px-4">
+    <section id="gallery" className="py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -52,7 +52,7 @@ const PhotoGallery = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div
               key={photo.id}

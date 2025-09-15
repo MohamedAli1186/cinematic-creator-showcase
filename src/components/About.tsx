@@ -61,7 +61,7 @@ const About = () => {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 gap-6 animate-fade-in">
+          <div className="grid cursor-default grid-cols-2 gap-6 animate-fade-in">
             {stats.map((stat, index) => (
               <Card
                 key={index}

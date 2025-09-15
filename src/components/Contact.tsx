@@ -50,8 +50,8 @@ const Contact = () => {
     },
     {
       icon: Clock,
-      label: "Response Time",
-      value: "Within 24 hours",
+      label: "Availability Time",
+      value: "24 hours",
     },
   ];
 
