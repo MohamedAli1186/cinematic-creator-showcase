@@ -178,6 +178,7 @@ const Portfolio = () => {
                 className="w-full h-auto rounded-lg"
               />
               <button
+                title="close"
                 className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
                 onClick={() => setSelectedVideo(null)}
               >
