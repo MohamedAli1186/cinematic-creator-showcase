@@ -15,6 +15,7 @@ import vid11 from "../assets/vid11.mp4";
 import vid12 from "../assets/vid12.mp4";
 import vid13 from "../assets/vid13.mp4";
 import vid14 from "../assets/vid14.mp4";
+import vid15 from "../assets/vid15.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -29,6 +30,8 @@ import soravid12 from "../assets/soravid12.png";
 import soravid11 from "../assets/soravid11.png";
 import soravid13 from "../assets/soravid13.png";
 import soravid14 from "../assets/soravid14.png";
+import soravid15 from "../assets/soravid15.png";
+
 import { Button } from "./ui/button";
 
 const Portfolio = () => {
@@ -66,6 +69,14 @@ const Portfolio = () => {
       thumbnail: soravid9,
       videoUrl: vid9,
       duration: "0:56",
+      category: "Explainer",
+    },
+    {
+      id: 15,
+      title: "You are not Broke?",
+      thumbnail: soravid15,
+      videoUrl: vid15,
+      duration: "1:05",
       category: "Explainer",
     },
     {
