@@ -13,6 +13,8 @@ import vid9 from "../assets/vid9.mp4";
 import vid10 from "../assets/vid10.mp4";
 import vid11 from "../assets/vid11.mp4";
 import vid12 from "../assets/vid12.mp4";
+import vid13 from "../assets/vid13.mp4";
+import vid14 from "../assets/vid14.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -23,8 +25,10 @@ import soravid7 from "../assets/soravid7.png";
 import soravid8 from "../assets/soravid8.png";
 import soravid9 from "../assets/soravid9.jpeg";
 import soravid10 from "../assets/soravid10.png";
-import soravid11 from "../assets/soravid11.png";
 import soravid12 from "../assets/soravid12.png";
+import soravid11 from "../assets/soravid11.png";
+import soravid13 from "../assets/soravid13.png";
+import soravid14 from "../assets/soravid14.png";
 import { Button } from "./ui/button";
 
 const Portfolio = () => {
@@ -63,6 +67,14 @@ const Portfolio = () => {
       videoUrl: vid9,
       duration: "0:56",
       category: "Explainer",
+    },
+    {
+      id: 14,
+      title: "Learn English in week!",
+      thumbnail: soravid14,
+      videoUrl: vid14,
+      duration: "0:50",
+      category: "Commercial",
     },
     {
       id: 11,
@@ -111,6 +123,14 @@ const Portfolio = () => {
       thumbnail: soravid1,
       videoUrl: vid1,
       duration: "0:56",
+      category: "Commercial",
+    },
+    {
+      id: 13,
+      title: "Learn English?",
+      thumbnail: soravid13,
+      videoUrl: vid13,
+      duration: "0:50",
       category: "Commercial",
     },
 

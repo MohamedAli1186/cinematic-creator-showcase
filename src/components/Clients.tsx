@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import waffarx from "../assets/waffarx.png";
+import speako from "../assets/speako.jpg";
 import { ExternalLink } from "lucide-react";
 const Clients = () => {
   const clients = [
@@ -8,6 +9,12 @@ const Clients = () => {
       logo: waffarx,
       description: "Cash Back Platform",
       link: "https://waffarx.com",
+    },
+    {
+      name: "Speako",
+      logo: speako,
+      description: "English Courses Platform",
+      link: "https://www.facebook.com/speakoenglish",
     },
   ];
 
@@ -35,7 +42,7 @@ const Clients = () => {
                 <img
                   src={client.logo}
                   alt={`${client.name} logo`}
-                  className="w-full h-16 object-contain mx-auto rounded"
+                  className="w-20 h-20 object-contain mx-auto rounded"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
