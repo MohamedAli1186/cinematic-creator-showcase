@@ -17,6 +17,8 @@ import vid13 from "../assets/vid13.mp4";
 import vid14 from "../assets/vid14.mp4";
 import vid15 from "../assets/vid15.mp4";
 import vid16 from "../assets/vid16.mp4";
+import vid17 from "../assets/vid17.mp4";
+import vid18 from "../assets/vid18.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -33,6 +35,8 @@ import soravid13 from "../assets/soravid13.png";
 import soravid14 from "../assets/soravid14.png";
 import soravid15 from "../assets/soravid15.png";
 import soravid16 from "../assets/soravid16.jpg";
+import soravid17 from "../assets/soravid17.png";
+import soravid18 from "../assets/soravid18.png";
 
 import { Button } from "./ui/button";
 
@@ -111,6 +115,22 @@ const Portfolio = () => {
       thumbnail: soravid10,
       videoUrl: vid10,
       duration: "1:10",
+      category: "Explainer",
+    },
+    {
+      id: 17,
+      title: "Why you learn English?",
+      thumbnail: soravid17,
+      videoUrl: vid17,
+      duration: "0:37",
+      category: "Explainer",
+    },
+    {
+      id: 18,
+      title: "Buy Mobile for only 200EGP!",
+      thumbnail: soravid18,
+      videoUrl: vid18,
+      duration: "0:51",
       category: "Explainer",
     },
 
