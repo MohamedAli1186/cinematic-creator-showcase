@@ -16,6 +16,7 @@ import vid12 from "../assets/vid12.mp4";
 import vid13 from "../assets/vid13.mp4";
 import vid14 from "../assets/vid14.mp4";
 import vid15 from "../assets/vid15.mp4";
+import vid16 from "../assets/vid16.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -31,6 +32,7 @@ import soravid11 from "../assets/soravid11.png";
 import soravid13 from "../assets/soravid13.png";
 import soravid14 from "../assets/soravid14.png";
 import soravid15 from "../assets/soravid15.png";
+import soravid16 from "../assets/soravid16.jpg";
 
 import { Button } from "./ui/button";
 
@@ -86,6 +88,14 @@ const Portfolio = () => {
       videoUrl: vid14,
       duration: "0:50",
       category: "Commercial",
+    },
+    {
+      id: 16,
+      title: "You Have Challenge",
+      thumbnail: soravid16,
+      videoUrl: vid16,
+      duration: "1:05",
+      category: "Explainer",
     },
     {
       id: 11,
