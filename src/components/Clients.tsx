@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import waffarx from "../assets/waffarx.png";
 import speako from "../assets/speako.jpg";
+import toptech from "../assets/toptech.png";
 import { ExternalLink } from "lucide-react";
 const Clients = () => {
   const clients = [
@@ -15,6 +16,12 @@ const Clients = () => {
       logo: speako,
       description: "English Courses Platform",
       link: "https://www.facebook.com/speakoenglish",
+    },
+    {
+      name: "TopTech",
+      logo: toptech,
+      description: "Design Studio",
+      link: "https://www.instagram.com/toptech.company/",
     },
   ];
 

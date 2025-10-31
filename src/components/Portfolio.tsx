@@ -19,6 +19,7 @@ import vid15 from "../assets/vid15.mp4";
 import vid16 from "../assets/vid16.mp4";
 import vid17 from "../assets/vid17.mp4";
 import vid18 from "../assets/vid18.mp4";
+import vid19 from "../assets/vid19.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -37,6 +38,7 @@ import soravid15 from "../assets/soravid15.png";
 import soravid16 from "../assets/soravid16.jpg";
 import soravid17 from "../assets/soravid17.png";
 import soravid18 from "../assets/soravid18.png";
+import soravid19 from "../assets/soravid19.png";
 
 import { Button } from "./ui/button";
 
@@ -78,6 +80,22 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
+      id: 11,
+      title: "Cashback in Bank or Full Tank",
+      thumbnail: soravid11,
+      videoUrl: vid11,
+      duration: "0:48",
+      category: "Commercial",
+    },
+    {
+      id: 13,
+      title: "Learn English?",
+      thumbnail: soravid13,
+      videoUrl: vid13,
+      duration: "0:50",
+      category: "Commercial",
+    },
+    {
       id: 15,
       title: "You are not Broke?",
       thumbnail: soravid15,
@@ -94,20 +112,20 @@ const Portfolio = () => {
       category: "Commercial",
     },
     {
+      id: 19,
+      title: "Want to market your brand?",
+      thumbnail: soravid19,
+      videoUrl: vid19,
+      duration: "0:42",
+      category: "Freelance",
+    },
+    {
       id: 16,
       title: "You Have Challenge",
       thumbnail: soravid16,
       videoUrl: vid16,
       duration: "1:05",
       category: "Explainer",
-    },
-    {
-      id: 11,
-      title: "Cashback or Full Tank",
-      thumbnail: soravid11,
-      videoUrl: vid11,
-      duration: "0:48",
-      category: "Commercial",
     },
     {
       id: 10,
@@ -133,7 +151,6 @@ const Portfolio = () => {
       duration: "0:51",
       category: "Explainer",
     },
-
     {
       id: 12,
       title: "HOLD UP!!",
@@ -166,15 +183,6 @@ const Portfolio = () => {
       duration: "0:56",
       category: "Commercial",
     },
-    {
-      id: 13,
-      title: "Learn English?",
-      thumbnail: soravid13,
-      videoUrl: vid13,
-      duration: "0:50",
-      category: "Commercial",
-    },
-
     {
       id: 2,
       title: "Back To School",

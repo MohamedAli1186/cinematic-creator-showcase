@@ -4,9 +4,9 @@ import { Video, Users, Award, Zap } from "lucide-react";
 const About = () => {
   const stats = [
     { icon: Video, number: "20+", label: "Videos Created" },
-    { icon: Users, number: "1h", label: "Maximum Time for Filming" },
+    { icon: Users, number: "20Min", label: "Maximum Time for Filming" },
     { icon: Award, number: "5+", label: "WaffarX Campaigns" },
-    { icon: Zap, number: "1M+", label: "Views Generated" },
+    { icon: Zap, number: "2M+", label: "Views Generated" },
   ];
 
   return (
