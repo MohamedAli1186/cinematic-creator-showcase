@@ -3,10 +3,10 @@ import { Video, Users, Award, Zap } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Video, number: "20+", label: "Videos Created" },
+    { icon: Video, number: "40+", label: "Videos Created" },
     { icon: Users, number: "20Min", label: "Maximum Time for Filming" },
     { icon: Award, number: "5+", label: "WaffarX Campaigns" },
-    { icon: Zap, number: "2M+", label: "Views Generated" },
+    { icon: Zap, number: "3M+", label: "Views Generated" },
   ];
 
   return (
@@ -37,7 +37,7 @@ const About = () => {
               <p>
                 With over{" "}
                 <span className="text-primary font-semibold">
-                  10 professional videos
+                  30 professional videos
                 </span>{" "}
                 created for WaffarX and numerous freelance collaborations, I
                 specialize in crafting narratives that resonate with audiences

@@ -20,6 +20,10 @@ import vid16 from "../assets/vid16.mp4";
 import vid17 from "../assets/vid17.mp4";
 import vid18 from "../assets/vid18.mp4";
 import vid19 from "../assets/vid19.mp4";
+import vid20 from "../assets/vid20.mp4";
+import vid21 from "../assets/vid21.mp4";
+import vid22 from "../assets/vid22.mp4";
+import vid23 from "../assets/vid23.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -39,6 +43,10 @@ import soravid16 from "../assets/soravid16.jpg";
 import soravid17 from "../assets/soravid17.png";
 import soravid18 from "../assets/soravid18.png";
 import soravid19 from "../assets/soravid19.png";
+import soravid20 from "../assets/soravid20.png";
+import soravid21 from "../assets/soravid21.png";
+import soravid22 from "../assets/soravid22.png";
+import soravid23 from "../assets/soravid23.png";
 
 import { Button } from "./ui/button";
 
@@ -96,6 +104,30 @@ const Portfolio = () => {
       category: "Commercial",
     },
     {
+      id: 21,
+      title: "There's No Time",
+      thumbnail: soravid21,
+      videoUrl: vid21,
+      duration: "0:17",
+      category: "Explainer",
+    },
+    {
+      id: 20,
+      title: "WaffarX Tricks",
+      thumbnail: soravid20,
+      videoUrl: vid20,
+      duration: "1:03",
+      category: "Explainer",
+    },
+    {
+      id: 23,
+      title: "Cashback on Every Purchase",
+      thumbnail: soravid23,
+      videoUrl: vid23,
+      duration: "0:44",
+      category: "Commercial",
+    },
+    {
       id: 15,
       title: "You are not Broke?",
       thumbnail: soravid15,
@@ -112,12 +144,28 @@ const Portfolio = () => {
       category: "Commercial",
     },
     {
+      id: 12,
+      title: "HOLD UP!!",
+      thumbnail: soravid12,
+      videoUrl: vid12,
+      duration: "0:57",
+      category: "Commercial",
+    },
+    {
       id: 19,
       title: "Want to market your brand?",
       thumbnail: soravid19,
       videoUrl: vid19,
       duration: "0:42",
       category: "Freelance",
+    },
+    {
+      id: 22,
+      title: "I Promised You!",
+      thumbnail: soravid22,
+      videoUrl: vid22,
+      duration: "0:59",
+      category: "Explainer",
     },
     {
       id: 16,
@@ -152,12 +200,12 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
-      id: 12,
-      title: "HOLD UP!!",
-      thumbnail: soravid12,
-      videoUrl: vid12,
-      duration: "0:57",
-      category: "Commercial",
+      id: 8,
+      title: "Amazon Prime Week",
+      thumbnail: soravid8,
+      videoUrl: vid8,
+      duration: "0:42",
+      category: "Explainer",
     },
     {
       id: 4,
@@ -165,14 +213,6 @@ const Portfolio = () => {
       thumbnail: soravid4,
       videoUrl: vid4,
       duration: "1:09",
-      category: "Explainer",
-    },
-    {
-      id: 8,
-      title: "Amazon Prime Week",
-      thumbnail: soravid8,
-      videoUrl: vid8,
-      duration: "0:42",
       category: "Explainer",
     },
     {
