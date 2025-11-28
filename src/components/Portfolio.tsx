@@ -24,6 +24,11 @@ import vid20 from "../assets/vid20.mp4";
 import vid21 from "../assets/vid21.mp4";
 import vid22 from "../assets/vid22.mp4";
 import vid23 from "../assets/vid23.mp4";
+import vid24 from "../assets/vid24.mp4";
+import vid25 from "../assets/vid25.mp4";
+import vid26 from "../assets/vid26.mp4";
+import vid27 from "../assets/vid27.mp4";
+import vid28 from "../assets/vid28.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -47,6 +52,11 @@ import soravid20 from "../assets/soravid20.png";
 import soravid21 from "../assets/soravid21.png";
 import soravid22 from "../assets/soravid22.png";
 import soravid23 from "../assets/soravid23.png";
+import soravid24 from "../assets/soravid24.png";
+import soravid25 from "../assets/soravid25.png";
+import soravid26 from "../assets/soravid26.png";
+import soravid27 from "../assets/soravid27.png";
+import soravid28 from "../assets/soravid28.png";
 
 import { Button } from "./ui/button";
 
@@ -88,6 +98,30 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
+      id: 28,
+      title: "Benifits of eating cabbage",
+      thumbnail: soravid28,
+      videoUrl: vid28,
+      duration: "1:13",
+      category: "Sarcasm",
+    },
+    {
+      id: 27,
+      title: "Are you a Saver?",
+      thumbnail: soravid27,
+      videoUrl: vid27,
+      duration: "0:49",
+      category: "Commercial",
+    },
+    {
+      id: 26,
+      title: "White Friday Offers",
+      thumbnail: soravid26,
+      videoUrl: vid26,
+      duration: "0:22",
+      category: "Commercial",
+    },
+    {
       id: 11,
       title: "Cashback in Bank or Full Tank",
       thumbnail: soravid11,
@@ -109,14 +143,6 @@ const Portfolio = () => {
       thumbnail: soravid21,
       videoUrl: vid21,
       duration: "0:17",
-      category: "Explainer",
-    },
-    {
-      id: 20,
-      title: "WaffarX Tricks",
-      thumbnail: soravid20,
-      videoUrl: vid20,
-      duration: "1:03",
       category: "Explainer",
     },
     {
@@ -142,6 +168,22 @@ const Portfolio = () => {
       videoUrl: vid14,
       duration: "0:50",
       category: "Commercial",
+    },
+    {
+      id: 24,
+      title: "Join Telegram Channel",
+      thumbnail: soravid24,
+      videoUrl: vid24,
+      duration: "0:32",
+      category: "Explainer",
+    },
+    {
+      id: 25,
+      title: "IPhone 16 for free!",
+      thumbnail: soravid25,
+      videoUrl: vid25,
+      duration: "0:19",
+      category: "Teaser",
     },
     {
       id: 12,
@@ -192,14 +234,6 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
-      id: 18,
-      title: "Buy Mobile for only 200EGP!",
-      thumbnail: soravid18,
-      videoUrl: vid18,
-      duration: "0:51",
-      category: "Explainer",
-    },
-    {
       id: 8,
       title: "Amazon Prime Week",
       thumbnail: soravid8,
@@ -231,7 +265,6 @@ const Portfolio = () => {
       duration: "0:48",
       category: "Explainer",
     },
-
     {
       id: 5,
       title: "Don't Forget Us",
@@ -257,6 +290,14 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
+      id: 20,
+      title: "WaffarX Tricks 2",
+      thumbnail: soravid20,
+      videoUrl: vid20,
+      duration: "1:03",
+      category: "Explainer",
+    },
+    {
       id: 3,
       title: "Looking For New Mobile?",
       thumbnail: soravid3,
@@ -264,6 +305,14 @@ const Portfolio = () => {
       duration: "1:00",
       category: "Commercial",
     },
+    // {
+    //   id: 18,
+    //   title: "Buy Mobile for only 200EGP!",
+    //   thumbnail: soravid18,
+    //   videoUrl: vid18,
+    //   duration: "0:51",
+    //   category: "Explainer",
+    // },
   ];
 
   const videosToDisplay = showAll ? videos : videos.slice(0, videosPerRow);

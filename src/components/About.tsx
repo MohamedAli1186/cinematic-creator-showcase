@@ -3,10 +3,10 @@ import { Video, Users, Award, Zap } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Video, number: "40+", label: "Videos Created" },
+    { icon: Video, number: "60+", label: "Videos Created" },
     { icon: Users, number: "20Min", label: "Maximum Time for Filming" },
-    { icon: Award, number: "5+", label: "WaffarX Campaigns" },
-    { icon: Zap, number: "3M+", label: "Views Generated" },
+    { icon: Award, number: "7+", label: "WaffarX Campaigns" },
+    { icon: Zap, number: "5M+", label: "Views Generated" },
   ];
 
   return (
