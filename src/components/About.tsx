@@ -2,13 +2,13 @@ import { Card } from "@/components/ui/card";
 import { Video, Users, Award, Zap } from "lucide-react";
 
 const About = () => {
+  const videosNumber = "65+";
   const stats = [
-    { icon: Video, number: "60+", label: "Videos Created" },
+    { icon: Video, number: videosNumber, label: "Videos Created" },
     { icon: Users, number: "20Min", label: "Maximum Time for Filming" },
     { icon: Award, number: "7+", label: "WaffarX Campaigns" },
     { icon: Zap, number: "5M+", label: "Views Generated" },
   ];
-
   return (
     <section id="about" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
@@ -37,7 +37,7 @@ const About = () => {
               <p>
                 With over{" "}
                 <span className="text-primary font-semibold">
-                  30 professional videos
+                  {videosNumber} professional videos
                 </span>{" "}
                 created for WaffarX and numerous freelance collaborations, I
                 specialize in crafting narratives that resonate with audiences

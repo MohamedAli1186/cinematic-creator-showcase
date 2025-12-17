@@ -85,6 +85,8 @@ const PhotoGallery = () => {
               className="max-w-full max-h-full object-contain rounded-lg"
             />
             <button
+              type="button"
+              title="Close"
               className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
               onClick={() => setSelectedImage(null)}
             >
