@@ -29,6 +29,10 @@ import vid25 from "../assets/vid25.mp4";
 import vid26 from "../assets/vid26.mp4";
 import vid27 from "../assets/vid27.mp4";
 import vid28 from "../assets/vid28.mp4";
+import vid29 from "../assets/vid29.mp4";
+import vid30 from "../assets/vid30.mp4";
+import vid31 from "../assets/vid31.mp4";
+
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -57,6 +61,9 @@ import soravid25 from "../assets/soravid25.png";
 import soravid26 from "../assets/soravid26.png";
 import soravid27 from "../assets/soravid27.png";
 import soravid28 from "../assets/soravid28.png";
+import soravid29 from "../assets/soravid29.png";
+import soravid30 from "../assets/soravid30.png";
+import soravid31 from "../assets/soravid31.png";
 
 import { Button } from "./ui/button";
 
@@ -90,6 +97,14 @@ const Portfolio = () => {
 
   const videos = [
     {
+      id: 31,
+      title: "Don't Worry About Tomorrow",
+      thumbnail: soravid31,
+      videoUrl: vid31,
+      duration: "1:07",
+      category: "Explainer",
+    },
+    {
       id: 9,
       title: "Why Only Gas!",
       thumbnail: soravid9,
@@ -121,14 +136,7 @@ const Portfolio = () => {
       duration: "0:49",
       category: "Commercial",
     },
-    {
-      id: 26,
-      title: "White Friday Offers",
-      thumbnail: soravid26,
-      videoUrl: vid26,
-      duration: "0:22",
-      category: "Commercial",
-    },
+
     {
       id: 11,
       title: "Cashback in Bank or Full Tank",
@@ -136,6 +144,14 @@ const Portfolio = () => {
       videoUrl: vid11,
       duration: "0:48",
       category: "Commercial",
+    },
+    {
+      id: 30,
+      title: "Why Cashback Is Pending",
+      thumbnail: soravid30,
+      videoUrl: vid30,
+      duration: "0:45",
+      category: "Explainer",
     },
     {
       id: 13,
@@ -218,6 +234,14 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
+      id: 26,
+      title: "White Friday Offers",
+      thumbnail: soravid26,
+      videoUrl: vid26,
+      duration: "0:22",
+      category: "Commercial",
+    },
+    {
       id: 10,
       title: "New IPhone 17",
       thumbnail: soravid10,
@@ -247,6 +271,14 @@ const Portfolio = () => {
       thumbnail: soravid4,
       videoUrl: vid4,
       duration: "1:09",
+      category: "Explainer",
+    },
+    {
+      id: 29,
+      title: "After Years of WaffarX",
+      thumbnail: soravid29,
+      videoUrl: vid29,
+      duration: "0:49",
       category: "Explainer",
     },
     {
