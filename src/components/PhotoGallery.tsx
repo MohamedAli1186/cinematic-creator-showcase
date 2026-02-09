@@ -6,6 +6,7 @@ import ana3 from "../assets/ana3.jpg";
 import ana7 from "../assets/ana7.jpg";
 import ana6 from "../assets/ana6.jpg";
 import ana8 from "../assets/ana8.jpg";
+import ana10 from "../assets/ana10.jpg";
 
 const PhotoGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -28,7 +29,7 @@ const PhotoGallery = () => {
     },
     {
       id: 4,
-      src: ana7,
+      src: ana10,
       alt: "Behind the scenes 1",
     },
     {
