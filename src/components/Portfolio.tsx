@@ -402,7 +402,7 @@ const Portfolio = () => {
                     {video.description}
                   </p> */}
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-primary font-medium">
+                    <span className="text-sm text-primary aaaa font-medium">
                       View Video
                     </span>
                     <ExternalLink className="w-4 h-4 text-primary" />

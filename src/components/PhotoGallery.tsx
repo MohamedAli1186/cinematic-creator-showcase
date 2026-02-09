@@ -33,14 +33,14 @@ const PhotoGallery = () => {
       alt: "Behind the scenes 1",
     },
     {
-      id: 5,
-      src: ana2,
-      alt: "Behind the scenes 2",
-    },
-    {
       id: 6,
       src: ana1,
       alt: "Professional headshot 4",
+    },
+    {
+      id: 5,
+      src: ana2,
+      alt: "Behind the scenes 2",
     },
   ];
 
