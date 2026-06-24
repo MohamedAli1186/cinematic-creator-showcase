@@ -29,6 +29,8 @@ import vid25 from "../assets/vid25.mp4";
 import vid26 from "../assets/vid26.mp4";
 import vid27 from "../assets/vid27.mp4";
 import vid28 from "../assets/vid28.mp4";
+import vid29 from "../assets/vid29.mp4";
+import vid30 from "../assets/vid30.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -57,6 +59,8 @@ import soravid25 from "../assets/soravid25.png";
 import soravid26 from "../assets/soravid26.png";
 import soravid27 from "../assets/soravid27.png";
 import soravid28 from "../assets/soravid28.png";
+import soravid29 from "../assets/soravid29.png";
+import soravid30 from "../assets/soravid30.png";
 
 import { Button } from "./ui/button";
 
@@ -90,11 +94,76 @@ const Portfolio = () => {
 
   const videos = [
     {
+      id: 11,
+      title: "Cashback in Bank or Full Tank",
+      thumbnail: soravid11,
+      videoUrl: vid11,
+      duration: "0:48",
+      category: "Commercial",
+    },
+    {
+      id: 29,
+      title: "No one cares about learning!",
+      thumbnail: soravid29,
+      videoUrl: vid29,
+      duration: "0:34",
+      category: "Commercial",
+    },
+    {
+      id: 16,
+      title: "You Have Challenge",
+      thumbnail: soravid16,
+      videoUrl: vid16,
+      duration: "1:05",
+      category: "Explainer",
+    },
+
+    {
       id: 9,
       title: "Why Only Gas!",
       thumbnail: soravid9,
       videoUrl: vid9,
       duration: "0:56",
+      category: "Explainer",
+    },
+    {
+      id: 15,
+      title: "You are not Broke?",
+      thumbnail: soravid15,
+      videoUrl: vid15,
+      duration: "1:05",
+      category: "Explainer",
+    },
+    {
+      id: 13,
+      title: "Learn English?",
+      thumbnail: soravid13,
+      videoUrl: vid13,
+      duration: "0:50",
+      category: "Commercial",
+    },
+    {
+      id: 27,
+      title: "Are you a Saver?",
+      thumbnail: soravid27,
+      videoUrl: vid27,
+      duration: "0:49",
+      category: "Commercial",
+    },
+    {
+      id: 14,
+      title: "Learn English in week!",
+      thumbnail: soravid14,
+      videoUrl: vid14,
+      duration: "0:50",
+      category: "Commercial",
+    },
+    {
+      id: 30,
+      title: "We are SPEN",
+      thumbnail: soravid30,
+      videoUrl: vid30,
+      duration: "0:30",
       category: "Explainer",
     },
     {
@@ -106,52 +175,12 @@ const Portfolio = () => {
       category: "Sarcasm",
     },
     {
-      id: 16,
-      title: "You Have Challenge",
-      thumbnail: soravid16,
-      videoUrl: vid16,
-      duration: "1:05",
-      category: "Explainer",
-    },
-    {
-      id: 27,
-      title: "Are you a Saver?",
-      thumbnail: soravid27,
-      videoUrl: vid27,
-      duration: "0:49",
-      category: "Commercial",
-    },
-    {
-      id: 26,
-      title: "White Friday Offers",
-      thumbnail: soravid26,
-      videoUrl: vid26,
-      duration: "0:22",
-      category: "Commercial",
-    },
-    {
-      id: 11,
-      title: "Cashback in Bank or Full Tank",
-      thumbnail: soravid11,
-      videoUrl: vid11,
-      duration: "0:48",
-      category: "Commercial",
-    },
-    {
-      id: 13,
-      title: "Learn English?",
-      thumbnail: soravid13,
-      videoUrl: vid13,
-      duration: "0:50",
-      category: "Commercial",
-    },
-    {
       id: 21,
       title: "There's No Time",
       thumbnail: soravid21,
       videoUrl: vid21,
       duration: "0:17",
-      category: "Explainer",
+      category: "suspense",
     },
     {
       id: 23,
@@ -159,22 +188,6 @@ const Portfolio = () => {
       thumbnail: soravid23,
       videoUrl: vid23,
       duration: "0:44",
-      category: "Commercial",
-    },
-    {
-      id: 15,
-      title: "You are not Broke?",
-      thumbnail: soravid15,
-      videoUrl: vid15,
-      duration: "1:05",
-      category: "Explainer",
-    },
-    {
-      id: 14,
-      title: "Learn English in week!",
-      thumbnail: soravid14,
-      videoUrl: vid14,
-      duration: "0:50",
       category: "Commercial",
     },
     {
@@ -192,6 +205,14 @@ const Portfolio = () => {
       videoUrl: vid25,
       duration: "0:19",
       category: "Teaser",
+    },
+    {
+      id: 26,
+      title: "White Friday Offers",
+      thumbnail: soravid26,
+      videoUrl: vid26,
+      duration: "0:22",
+      category: "Commercial",
     },
     {
       id: 12,
@@ -250,20 +271,20 @@ const Portfolio = () => {
       category: "Explainer",
     },
     {
-      id: 1,
-      title: "WaffarX Kenz Campaign",
-      thumbnail: soravid1,
-      videoUrl: vid1,
-      duration: "0:56",
-      category: "Commercial",
-    },
-    {
       id: 2,
       title: "Back To School",
       thumbnail: soravid2,
       videoUrl: vid2,
       duration: "0:48",
       category: "Explainer",
+    },
+    {
+      id: 1,
+      title: "WaffarX Kenz Campaign",
+      thumbnail: soravid1,
+      videoUrl: vid1,
+      duration: "0:56",
+      category: "Commercial",
     },
     {
       id: 5,
@@ -305,14 +326,14 @@ const Portfolio = () => {
       duration: "1:00",
       category: "Commercial",
     },
-    // {
-    //   id: 18,xx
-    //   title: "Buy Mobile for only 200EGP!",
-    //   thumbnail: soravid18,
-    //   videoUrl: vid18,
-    //   duration: "0:51",
-    //   category: "Explainer",
-    // },
+    {
+      id: 18,
+      title: "Buy Mobile For Only 200EGP!",
+      thumbnail: soravid18,
+      videoUrl: vid18,
+      duration: "0:51",
+      category: "Explainer",
+    },
   ];
 
   const videosToDisplay = showAll ? videos : videos.slice(0, videosPerRow);

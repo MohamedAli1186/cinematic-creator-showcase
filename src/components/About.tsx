@@ -39,7 +39,7 @@ const About = () => {
                 <span className="text-primary font-semibold">
                   30 professional videos
                 </span>{" "}
-                created for WaffarX and numerous freelance collaborations, I
+                created for waffarX and numerous freelance collaborations, I
                 specialize in crafting narratives that resonate with audiences
                 and drive meaningful engagement for brands.
               </p>

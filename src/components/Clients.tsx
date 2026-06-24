@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import waffarx from "../assets/waffarx.png";
 import speako from "../assets/speako.jpg";
 import toptech from "../assets/toptech.png";
+import spen from "../assets/spen.png";
 import { ExternalLink } from "lucide-react";
 const Clients = () => {
   const clients = [
@@ -23,6 +24,12 @@ const Clients = () => {
       description: "Design Studio",
       link: "https://www.instagram.com/toptech.company/",
     },
+    {
+      name: "SPEN",
+      logo: spen,
+      description: "Education Platform",
+      link: "https://www.facebook.com/profile.php?id=61577684368817",
+    },
   ];
 
   return (
@@ -42,7 +49,7 @@ const Clients = () => {
           {clients.map((client, index) => (
             <Card
               key={index}
-              className=" bg-none! border-none  text-center hover:scale-105 transition-all duration-300 group"
+              className=" bg-none! w-48 border-none  text-center hover:scale-105 transition-all duration-300 group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="mb-4 grayscale group-hover:grayscale-0 transition-all duration-300">
@@ -70,7 +77,7 @@ const Clients = () => {
           ))}
         </div>
 
-        <div className="text-center mt-5 w-full bg-slate-900">
+        <div className="text-center mt-20 w-full bg-slate-900">
           <div className="inline-flex items-center gap-4  p-6 rounded-lg border border-border/20">
             <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
             <span className="text-lg font-medium">

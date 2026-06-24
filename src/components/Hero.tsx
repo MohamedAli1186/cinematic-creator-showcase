@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Play, X } from "lucide-react";
+import { Play, X } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-import me from "@/assets/me.jpg";
+import me from "@/assets/ana10.jpg.jpeg";
 
 const Hero = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -22,7 +22,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <div className="animate-fade-in">
-          <div className="group relative cursor-pointer w-48 h-48 md:w-56 md:h-56 mx-auto mt-16 rounded-full overflow-hidden" onClick={() => setSelectedImage(me)}>
+          <div
+            className="group relative cursor-pointer w-48 h-48 md:w-56 md:h-56 mx-auto mt-16 rounded-full overflow-hidden"
+            onClick={() => setSelectedImage(me)}
+          >
             <img
               src={me}
               alt="Professional video creator"
@@ -30,7 +33,18 @@ const Hero = () => {
             />
             <div className="absolute inset-0 bg-background/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <div className="bg-background/80 p-2 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-8 h-8"
+                >
                   <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
                 </svg>
               </div>
