@@ -3,9 +3,9 @@ import { X } from "lucide-react";
 import ana1 from "../assets/ana1.jpg";
 import ana2 from "../assets/ana2.jpg";
 import ana3 from "../assets/ana3.jpg";
-import ana7 from "../assets/ana7.jpg";
-import ana5 from "../assets/ana8.jpg.jpeg";
 import ana6 from "../assets/ana6.jpg";
+import ana8 from "../assets/ana8.jpg";
+import ana10 from "../assets/ana10.jpg";
 
 const PhotoGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -23,23 +23,23 @@ const PhotoGallery = () => {
     },
     {
       id: 3,
-      src: ana5,
+      src: ana8,
       alt: "Professional headshot 3",
     },
     {
       id: 4,
-      src: ana7,
+      src: ana10,
       alt: "Behind the scenes 1",
-    },
-    {
-      id: 5,
-      src: ana2,
-      alt: "Behind the scenes 2",
     },
     {
       id: 6,
       src: ana1,
       alt: "Professional headshot 4",
+    },
+    {
+      id: 5,
+      src: ana2,
+      alt: "Behind the scenes 2",
     },
   ];
 
@@ -85,6 +85,8 @@ const PhotoGallery = () => {
               className="max-w-full max-h-full object-contain rounded-lg"
             />
             <button
+              type="button"
+              title="Close"
               className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
               onClick={() => setSelectedImage(null)}
             >

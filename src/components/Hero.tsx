@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, X } from "lucide-react";
+import { Play, Star, X } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import me from "@/assets/ana10.jpg.jpeg";
 
@@ -60,7 +60,7 @@ const Hero = () => {
             advertising model, I craft compelling and story-driven video content
             that grabs attention, builds trust, and drives results for brands.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
             <Button
               as="a"
               href="https://wa.me/201011533423"
@@ -80,6 +80,18 @@ const Hero = () => {
             >
               <Play className="w-5 h-5 mr-2" />
               Watch Reels
+            </Button>
+          </div>
+          <div className="mb-8">
+            <Button
+              as="a"
+              href="https://mohamed-ali-portfolio.vercel.app/"
+              variant="link"
+              size="sm"
+              className="text-sm px-8 py-3"
+            >
+              <Star className="w-5 h-5" fill="currentColor" />
+              My Front-End Portfolio
             </Button>
           </div>
         </div>
@@ -106,6 +118,8 @@ const Hero = () => {
               className="max-w-full max-h-[80vh] object-contain rounded-lg"
             />
             <button
+              type="button"
+              title="Close"
               className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
               onClick={() => setSelectedImage(null)}
             >

@@ -31,6 +31,7 @@ import vid27 from "../assets/vid27.mp4";
 import vid28 from "../assets/vid28.mp4";
 import vid29 from "../assets/vid29.mp4";
 import vid30 from "../assets/vid30.mp4";
+import vid31 from "../assets/vid31.mp4";
 import soravid1 from "../assets/soravid1.png";
 import soravid2 from "../assets/soravid2.png";
 import soravid3 from "../assets/soravid3.png";
@@ -61,6 +62,7 @@ import soravid27 from "../assets/soravid27.png";
 import soravid28 from "../assets/soravid28.png";
 import soravid29 from "../assets/soravid29.png";
 import soravid30 from "../assets/soravid30.png";
+import soravid31 from "../assets/soravid31.png";
 
 import { Button } from "./ui/button";
 
@@ -114,16 +116,7 @@ const Portfolio = () => {
       title: "You Have Challenge",
       thumbnail: soravid16,
       videoUrl: vid16,
-      duration: "1:05",
-      category: "Explainer",
-    },
-
-    {
-      id: 9,
-      title: "Why Only Gas!",
-      thumbnail: soravid9,
-      videoUrl: vid9,
-      duration: "0:56",
+      duration: "1:04",
       category: "Explainer",
     },
     {
@@ -143,12 +136,20 @@ const Portfolio = () => {
       category: "Commercial",
     },
     {
-      id: 27,
-      title: "Are you a Saver?",
-      thumbnail: soravid27,
-      videoUrl: vid27,
-      duration: "0:49",
-      category: "Commercial",
+      id: 31,
+      title: "Don't Worry About Tomorrow",
+      thumbnail: soravid31,
+      videoUrl: vid31,
+      duration: "1:07",
+      category: "Explainer",
+    },
+    {
+      id: 21,
+      title: "There's No Time",
+      thumbnail: soravid21,
+      videoUrl: vid21,
+      duration: "0:17",
+      category: "suspense",
     },
     {
       id: 14,
@@ -157,6 +158,14 @@ const Portfolio = () => {
       videoUrl: vid14,
       duration: "0:50",
       category: "Commercial",
+    },
+    {
+      id: 9,
+      title: "Why Only Gas!",
+      thumbnail: soravid9,
+      videoUrl: vid9,
+      duration: "0:56",
+      category: "Explainer",
     },
     {
       id: 30,
@@ -174,14 +183,16 @@ const Portfolio = () => {
       duration: "1:13",
       category: "Sarcasm",
     },
+
     {
-      id: 21,
-      title: "There's No Time",
-      thumbnail: soravid21,
-      videoUrl: vid21,
-      duration: "0:17",
-      category: "suspense",
+      id: 27,
+      title: "Are you a Saver?",
+      thumbnail: soravid27,
+      videoUrl: vid27,
+      duration: "0:49",
+      category: "Commercial",
     },
+
     {
       id: 23,
       title: "Cashback on Every Purchase",
@@ -191,28 +202,12 @@ const Portfolio = () => {
       category: "Commercial",
     },
     {
-      id: 24,
-      title: "Join Telegram Channel",
-      thumbnail: soravid24,
-      videoUrl: vid24,
-      duration: "0:32",
-      category: "Explainer",
-    },
-    {
       id: 25,
       title: "IPhone 16 for free!",
       thumbnail: soravid25,
       videoUrl: vid25,
       duration: "0:19",
       category: "Teaser",
-    },
-    {
-      id: 26,
-      title: "White Friday Offers",
-      thumbnail: soravid26,
-      videoUrl: vid26,
-      duration: "0:22",
-      category: "Commercial",
     },
     {
       id: 12,
@@ -229,14 +224,6 @@ const Portfolio = () => {
       videoUrl: vid19,
       duration: "0:42",
       category: "Freelance",
-    },
-    {
-      id: 22,
-      title: "I Promised You!",
-      thumbnail: soravid22,
-      videoUrl: vid22,
-      duration: "0:59",
-      category: "Explainer",
     },
     {
       id: 10,
@@ -326,14 +313,6 @@ const Portfolio = () => {
       duration: "1:00",
       category: "Commercial",
     },
-    {
-      id: 18,
-      title: "Buy Mobile For Only 200EGP!",
-      thumbnail: soravid18,
-      videoUrl: vid18,
-      duration: "0:51",
-      category: "Explainer",
-    },
   ];
 
   const videosToDisplay = showAll ? videos : videos.slice(0, videosPerRow);
@@ -391,7 +370,7 @@ const Portfolio = () => {
                     {video.description}
                   </p> */}
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-primary font-medium">
+                    <span className="text-sm text-primary aaaa font-medium">
                       View Video
                     </span>
                     <ExternalLink className="w-4 h-4 text-primary" />
