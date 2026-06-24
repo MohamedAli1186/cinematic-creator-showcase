@@ -88,6 +88,7 @@ const Hero = () => {
               href="https://mohamed-ali-portfolio.vercel.app/"
               variant="link"
               size="sm"
+              target="_blank"
               className="text-sm px-8 py-3"
             >
               <Star className="w-5 h-5" fill="currentColor" />
