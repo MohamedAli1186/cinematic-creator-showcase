@@ -4,7 +4,7 @@ import ana1 from "../assets/ana1.jpg";
 import ana2 from "../assets/ana2.jpg";
 import ana3 from "../assets/ana3.jpg";
 import ana6 from "../assets/ana6.jpg";
-import ana8 from "../assets/ana8.jpg";
+import ana8 from "../assets/ana8.jpg.jpeg";
 import ana10 from "../assets/ana10.jpg";
 
 const PhotoGallery = () => {
