@@ -76,17 +76,16 @@ const Clients = () => {
             </Card>
           ))}
         </div>
-
-        <div className="text-center mt-20 w-full bg-slate-900">
-          <div className="inline-flex items-center gap-4  p-6 rounded-lg border border-border/20">
-            <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
-            <span className="text-lg font-medium">
-              Available for new collaborations
-            </span>
-            <div className="w-3 h-3 bg-accent rounded-full animate-pulse delay-500" />
-          </div>
-        </div>
       </section>
+      <div className="text-center mt-20 w-full bg-slate-900">
+        <div className="inline-flex items-center gap-4  p-6 rounded-lg border border-border/20">
+          <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
+          <span className="text-lg font-medium">
+            Available for new collaborations
+          </span>
+          <div className="w-3 h-3 bg-accent rounded-full animate-pulse delay-500" />
+        </div>
+      </div>
     </>
   );
 };
